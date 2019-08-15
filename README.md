@@ -7,7 +7,7 @@ Scripts used in Natsidis et al (2019)
 ### concatenate.py
 
 
-### 
+### jackknife.py
 
 
 
