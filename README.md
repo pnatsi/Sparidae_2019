@@ -12,7 +12,7 @@ Scripts used in Natsidis et al (2019)
 python concatenate.py allfiles.txt headers.txt
 ```
 
-will take all alignments contained in `allfiles.txt` and concatenate them into a single output file `concatenated.aln`
+will take all alignments contained in `allfiles.txt` and concatenate them into a single output file called `concatenated.aln`
 The headers in the output file will be the same for each species as in the initial, separate alignment files.
 When a species is missing from an alignment, its sequence will be filled with '-' characters in the final superalignment.
 
