@@ -3,6 +3,15 @@ Scripts used in Natsidis et al (2019)
 
 ### get_longest_orf.py
 
+```
+python get_longest_orf.py Pagrus_getorf_example.fasta Pagrus_longest_orf PAGR
+```
+
+### get_longest_isoform.py
+
+```
+python get_longest_isoform
+
 
 ### concatenate.py
 
