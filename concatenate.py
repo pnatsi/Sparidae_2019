@@ -2,22 +2,28 @@
 This script concatenates several fasta files into a superalignment, suitable for use in phylogenetics analysis.
 In all files, sequences from the same species must have identical headers. The headers are provided in "headers.txt"
 
-allfiles.txt contains the titles of the files to be concatenated
-headers.txt contains the FASTA headers for each of the species in the separate alignment files. This will also be the header in the final output
+python concatenate.py allfiles.txt headers.txt
+
+input_filename contains the titles of the files to be concatenated
+headers_filename contains the FASTA headers for each of the species in the separate alignment files. This will also be the header in the final output
 
 The output superalignment "concatenated.aln" will be in FASTA format
 '''
 
-
+import sys
 from Bio import SeqIO
 
-f = open("allfiles.txt", 'r')
+input_filename = sys.argv[-2]
+headers_filename = sys.argv[-1]
+
+
+f = open(input_filename, 'r')
 lines = f.readlines()
 filenames = []
 for line in lines:
     filenames.append(line.strip())
 
-f = open("headers.txt", 'r')
+f = open(headers_filename, 'r')
 lines = f.readlines()
 species = []
 for line in lines:
