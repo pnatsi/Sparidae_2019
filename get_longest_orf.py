@@ -11,11 +11,9 @@ The result will be in FASTA format and named 'output_filename.fa'. It will conta
                                                                                                                                                                                                                                               
 For example:                                                                                                                                                                                                                                  
                                                                                                                                                                                                                                               
-python get_longest_orfs Pagrus_getorf_example.fasta Pagrus_longest_orf                                                                                                                                                                        
+python get_longest_orfs.py Pagrus_getorf_example.fasta Pagrus_longest_orf                                                                                                                                                                        
                                                                                                                                                                                                                                               
-will output the file "Pagrus_longest_orf.fa"                                                                                                                                                                                                  
-                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                              
+will output the file "Pagrus_longest_orf.fa"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 """
 
 
@@ -24,14 +22,14 @@ will output the file "Pagrus_longest_orf.fa"
 import sys
 import re
 
-input_filename = sys.argv[-1]
+input_filename = sys.argv[-2]
+output_filename = sys.argv[-1] + '.fa'
 
 f = open(input_filename, 'r')
 lines = f.readlines()
 
 longests = {}
 pattern = 'TR\d+_c\d+_g\d+_i\d+'         #THE PATTERN IN THE FASTA HEADERS OF THE INPUT FILE.                                                                                                                                                 
-
 
 for line in lines:
     if line[0] == '>':
@@ -45,10 +43,10 @@ for line in lines:
         if len(protein) > len(longests[current]):
             longests[current] = protein
 
-name = sys.argv[-1]
-output_filename = open(name + '.fa', 'w')
+
+output = open(output_filename, 'w')
 
 for k,v in longests.items():
-    output_filename.write('>' + k + '\n')
-    output_filename.write(v + '\n')
-output_filename.close()
+    output.write('>' + k + '\n')
+    output.write(v + '\n')
+output.close()
