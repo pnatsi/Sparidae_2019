@@ -8,6 +8,7 @@ Here 100 jackknife replicates are created with each containing a random 70% of t
 These 100 files can then used to retrieve the sequences from the corresponding orthogroups
 '''
 
+import sys
 import numpy as np
 
 input_filename = sys.argv[-3]
