@@ -1,7 +1,6 @@
 """
-This script parses a fasta file and returns the longest isoform per gene, based on a given regular expression pattern
-The pattern in this script is specifically for the file Pagellus_example.fasta
-
+This script parses the output of 'getorf', which contains predicted open reading frames (ORFs) from a set of transcripts.
+The output file contains the longest predicted ORF per transcript.
 The script can be run as follows:
 
 python get_longest_orfs input_filename output_filename species_initials
@@ -12,11 +11,11 @@ Each header in the output file will contain as prefix the user-specified species
 For example:
 
 
-python get_longest_orfs Pagellus_unprocessed PAGEL_longest PAGEL
+python get_longest_orfs Pagrus_getorf_example.fasta Pagrus_longest_orf PAGR
 
-will output the file "PAGEL_longest.fa" with headers:
+will output the file "Pagrus_longest_orf.fa" with headers:
 
->PAGEL_TR_cx_gx_....
+>PAGR_TR_cx_gx_....
 
 
 """
@@ -33,7 +32,7 @@ f = open(input_filename, 'r')
 lines = f.readlines()
 
 longests = {}
-pattern = 'TR\d+_c\d+_g\d+_i\d+'         #THE PATTERN OF THE FASTA HEADERS IN THE INPUT FILE.
+pattern = 'TR\d+_c\d+_g\d+_i\d+'         #THE PATTERN IN THE FASTA HEADERS OF THE INPUT FILE.
 
 
 for line in lines:
