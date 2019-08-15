@@ -1,12 +1,18 @@
 '''
 This script creates jackknifed sets from a set of orthogroups, based on a given proportion.
-allfiles.txt contains the orthogroup filenames
-Here we create 100 replicated with each containing a random 70% of the original orthogroups
+
+python jackknife.py input_filename
+
+input_filename will contain the orthogroup filenames
+Here 100 jackknife replicates are created with each containing a random 70% of the original orthogroups
+These 100 files can then used to retrieve the sequences from the corresponding orthogroups
 '''
 
 import numpy as np
 
-f = open("allfiles.txt", "r")        # A FILE WITH ALL ORTHOGROUP FILENAMES CREATED WITH "ls OG* > allfiles.txt"
+input_filename = sys.argv[-1]
+
+f = open(input_filename, "r")        # A FILE WITH ALL ORTHOGROUP FILENAMES CREATED WITH "ls OG* > allfiles.txt"
 lines = f.readlines()
 filenames = [x.strip() for x in lines]
 
