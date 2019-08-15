@@ -10,7 +10,7 @@ Scripts used in Natsidis et al (2019)
 python get_longest_orf.py Pagrus_getorf_example.fasta Pagrus_longest_orf.fasta
 ```
 
-### get_longest_isoform.pyPAGR
+### get_longest_isoform.py
 
 
 
