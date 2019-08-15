@@ -1,6 +1,6 @@
 """
 This script parses a fasta file and returns the longest isoform per gene, based on a given regular expression pattern
-The pattern in this script is specifically for the file Pagellus_unprocessed.fa
+The pattern in this script is specifically for the file Pagellus_example.fasta
 
 The script can be run as follows:
 
