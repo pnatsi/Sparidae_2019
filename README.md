@@ -3,14 +3,15 @@ Scripts used in Natsidis et al (2019)
 
 ### get_longest_orf.py
 
-```
-python get_longest_orf.py Pagrus_getorf_example.fasta Pagrus_longest_orf PAGR
-```
+`get_longest_orf.py` will parse the output of 'getorf', which contains predicted open reading frames (ORFs) for given transcripts. It will then return the longest orf per transcript. Output will be written in FASTA format
 
-### get_longest_isoform.py
 
 ```
-python get_longest_isoform
+python get_longest_orf.py Pagrus_getorf_example.fasta Pagrus_longest_orf.fasta
+```
+
+### get_longest_isoform.pyPAGR
+
 
 
 ### concatenate.py
