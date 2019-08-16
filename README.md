@@ -26,6 +26,7 @@ will parse all sequences from `Pagrus_longest_orf.fasta` and will keep only the 
 ```
 >PAGR_transcript_id1
 >PAGR_transcript_id2
+...
 ```
 
 This file is ready to use in orthology inference analysis, together with other proteomes.
