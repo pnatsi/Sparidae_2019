@@ -3,15 +3,32 @@ Scripts used in Natsidis et al (2019)
 
 ### get_longest_orf.py
 
-`get_longest_orf.py` will parse the output of 'getorf', which contains predicted open reading frames (ORFs) for given transcripts. It will then return the longest orf per transcript. Output will be written in FASTA format
+`get_longest_orf.py` will parse the output of 'getorf', which contains predicted open reading frames (ORFs) for given transcripts. It will then return the longest ORF per transcript. Output will be written in FASTA format. For example:
 
 
 ```
 python get_longest_orf.py Pagrus_getorf_example.fasta Pagrus_longest_orf.fasta
 ```
 
+will parse all sequences from `Pagrus_getorf_example.fasta` and return the longest among the sequences that have the same transcript ID. The longest ORFs will be written in `Pagrus_longest_orf.fasta`
+
+
 ### get_longest_isoform.py
 
+`get_longest_isoform.py` will parse the output of `get_longest_orf` and it will return the longest isoform per gene. Multiple transcripts can represent different fragments or versions (allelles) of the same gene, however we are more interested in the longest isoform within the context of phylogenetic analysis. The different isoforms of the same gene can be distinguished by the 'i1', 'i2', 'i3', ..., notation in their FASTA headers. Output will be written in FASTA format. For example:
+
+```
+python get_longest_isoform.py 
+```
+
+will parse all sequences from `Pagrus_longest_orf.fasta` and will keep only the longest of the isoforms based on their FASTA headers. The result will be written in `Pagrus_longest_isoforms.fasta` and each sequence header will have the format:
+
+```
+>PAGR_transcript_id1
+>PAGR_transcript_id2
+```
+
+This file is ready to use in orthology inference analysis, together with other proteomes.
 
 
 ### concatenate.py
