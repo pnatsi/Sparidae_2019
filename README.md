@@ -46,7 +46,7 @@ When a species is missing from an alignment, its sequence will be filled with '-
 
 ### jackknife.py
 
-`jackknife.py` will create a number of jackknifed lists of orthogroup names given an initial list of orthogroup names and a proportion. For example:
+`jackknife.py` will create a number of jackknifed lists of orthogroup names from a given list of names and a proportion. For example:
 
 ```
 python jackknife.py allfiles.txt 100 0.7
