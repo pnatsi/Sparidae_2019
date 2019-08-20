@@ -15,7 +15,7 @@ will parse all sequences from `Pagrus_getorf_example.fasta` and return the longe
 
 ### get_longest_isoform.py
 
-`get_longest_isoform.py` will parse the output of `get_longest_orf` and it will return the longest isoform per gene. Multiple transcripts can represent different fragments or versions (allelles) of the same gene, however we are more interested in the longest isoform within the context of phylogenetic analysis. The different isoforms of the same gene can be distinguished by the 'i1', 'i2', 'i3', ..., notation in their FASTA headers. Output will be written in FASTA format. For example:
+`get_longest_isoform.py` will parse the output of `get_longest_orf.py` and it will return the longest isoform per gene. Multiple transcripts can represent different fragments or versions (allelles) of the same gene, however we are more interested in the longest isoform within the context of phylogenetic analysis. The different isoforms of the same gene can be distinguished by the 'i1', 'i2', 'i3', ..., notation in their FASTA headers. Output will be written in FASTA format. For example:
 
 ```
 python get_longest_isoform.py Pagrus_longest_orfs.fasta PAGR
