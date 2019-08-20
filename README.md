@@ -1,5 +1,5 @@
 # Sparidae_2019
-Scripts used in Natsidis et al (2019)
+Scripts used in Natsidis et al (2019) "Phylogenomics investigation of sparids (Teleostei: Spariformes) using high-quality proteomes highlights the importance of taxon sampling" 
 
 ### get_longest_orf.py
 
