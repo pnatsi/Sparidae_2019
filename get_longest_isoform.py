@@ -22,8 +22,9 @@ will output the file "Pagrus_longest_isoforms.fasta" with sequence headers:
 
 """
 
+#!/usr/bin/python
 
-#!/usr/bin/pythonimport sys
+import sys
 import re
 
 infilename = sys.argv[-3]
