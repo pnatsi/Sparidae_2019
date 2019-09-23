@@ -57,10 +57,10 @@ will take the orthogroup names contained in `allfiles.txt` and create 100 replic
 
 <br>
 Who<br> 
- Paschalis Natsidis, MSc Thesis studend (pnatsidis@hotmail.com); <br>
+ Paschalis Natsidis, MSc Thesis student (pnatsidis@hotmail.com); <br>
 <br>
 Where<br>
- Institute of Marine Biology, Biotechnology and Aquaculture, 
+ Institute of Marine Biology, Biotechnology and Aquaculture, <br> 
  Hellenic Centre for Marine Research, Heraklion, Greecer;<br>
  MSc Bioinformatics, School of Medicine, University of Crete; 
 <br>
