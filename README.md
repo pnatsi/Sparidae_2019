@@ -60,9 +60,8 @@ Who<br>
  Paschalis Natsidis, MSc Thesis student (pnatsidis@hotmail.com); <br>
 <br>
 Where<br>
- Institute of Marine Biology, Biotechnology and Aquaculture, <br> 
- Hellenic Centre for Marine Research, Heraklion, Greecer;<br>
- MSc Bioinformatics, School of Medicine, University of Crete; 
+ IMBBC, HCMR, Heraklion, Greece;<br>
+ MSc Bioinformatics, University of Crete; 
 <br>
 <br>
 When<br> 
