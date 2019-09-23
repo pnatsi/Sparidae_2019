@@ -54,6 +54,9 @@ python jackknife.py allfiles.txt 100 0.7
 
 will take the orthogroup names contained in `allfiles.txt` and create 100 replicates, each containing a random 70% of the initial orthogroup names These files can then be used to retrieve the corresponding orthogroups and perform jackknifed phylogenetic trees.
 
+<br>
+
+========================================================================================================
 
 <br>
 Who<br> 
