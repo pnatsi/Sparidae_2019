@@ -57,8 +57,6 @@ will take the orthogroup names contained in `allfiles.txt` and create 100 replic
 <br>
 
 ======================================================================================
-
-<br>
 Who<br> 
  Paschalis Natsidis, MSc Thesis student (pnatsidis@hotmail.com); <br>
 <br>
